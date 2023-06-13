@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zara Website Navigation</title>
+    <style>
+.flag.zoom-in {
+    animation: zoom-in 0.3s ease-in-out;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+  a:link, a:visited {
+    color: black;
+  }
+footer {
+  background-color: rgb(237, 237, 237);
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-section {
+  color: #555;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://imur.com/uuuUMrS.jpgg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            height: 100vh;
+            width: 200px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: width 0.3s;
+        }
+
+        .navbar.hidden {
+            width: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin-bottom: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #999;
+        }
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-heading {
+            .welcome-heading {
+            font-family: "Courier New", Courier, monospace;
+        }
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-heading img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container img.hidden {
+            opacity: 0;
+        }
+
+        .image-container img.visible {
+            opacity: 1;
+        }
+
+        .image-container figcaption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            padding: 5px;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 5px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .search-bar span {
+            margin-left: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .toggle-button {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .hidden-item {
+            display: none;
+        }.btn-mktg {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            display: inline-block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid rgba(27, 31, 35, 0.2);
+            border-radius: 6px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 10px 16px;
+            background-repeat: no-repeat;
+            background-position: right -1px center;
+            background-size: 12px 12px;
+            transition: background 0.2s cubic-bezier(0.3, 0, 0.5, 1), border 0.2s cubic-bezier(0.3, 0, 0.5, 1),
+                color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+        }
+
+        .btn-mktg.btn-large-mktg {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 12px 20px;
+        }
+
+        .btn-mktg.btn-muted-mktg {
+            color: #586069;
+            background-color: #f6f8fa;
+            background-image: linear-gradient(-180deg, #f6f8fa 0%, #f1f3f4 90%);
+            background-repeat: repeat-x;
+            background-position: -1px -1px;
+            background-size: 110% 110%;
+            border-color: rgba(27, 31, 35, 0.2);
+            box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+                inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+        }
+
+        .btn-mktg.btn-muted-mktg:hover {
+            background-color: #f1f3f4;
+            background-position: -0.5em;
+            border-color: rgba(27, 31, 35, 0.35);
+            box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+                inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+            color: #333;
+        }
+
+        .octicon {
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: text-bottom;
+        }
+
+        .arrow-symbol-mktg {
+            display: inline-block;
+            color: #586069;
+            font-size: 14px;
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+        }
+
+        .octicon-chevrow-stem {
+            stroke: currentColor;
+        }
+
+        .scrollable-content {
+            height: 400px; /* Adjust the height as needed */
+            background-color: rgb(238, 238, 236);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            overflow-y: scroll;
+        }
+ .sign-up-button {
+    margin-top: 30px;
+    margin-left: 500px; /* Adjust the margin-left value to move the buttons to the right */
+  }
+        .sign-up-button button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        .sign-up-button button:hover {
+            background-color: #999;
+        }
+
+
+
+    .flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 0px; /* Add margin-top to move the flags down */
+    margin-left: 220px; /* Adjust the margin-left value to move the flags to the right */
+    background-color: transparent; /* Set the background-color to transparent */
+}
+    }
+
+    .flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 0px; /* Add margin-top to move the flags down */
+    margin-left: 220px; /* Adjust the margin-left value to move the flags to the right */
+    background-color: transparent; /* Set the background-color to transparent */
+}
+
+        .flag {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 100px;
+            margin: 8px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fade-in 0.5s ease-in-out forwards;
+            animation-delay: 0s;
+            cursor: pointer;
+            background-color: rgb(238, 238, 238);
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .flag:hover {
+            transform: scale(1.05);
+        }
+
+        .flag img {
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .flag-label {
+            margin-top: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+  </style>
+</head>
+<body>
+<h1 class="welcome-heading">
+    <img src="https://imgur.com/GW91Wus.jpg" alt="Logo">
+    The Volatility Smile
+  <h1> </h1>
+  
+  <!-- Flags of the European Union countries -->
+<div class="flags-container">
+    <div class="flag" id="usa-flag">
+    <img src="https://imgur.com/mqAXa6z.png" alt="USA">
+    <div class="flag-label"><a href="Untitled 7.html">USA</a></div>
+</div>
+	<div class="flag">
+      <img src="https://imgur.com/Zgtk52i.png" alt="Belgium">
+      <div class="flag-label">Belgium</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/7MUV117.png" alt="Bulgaria">
+      <div class="flag-label"><a href="Ukexp.html"> United Kingdom </a></div>    </div>
+    <!-- Add the rest of the country flags here -->
+    <div class="flag">
+      <img src="https://imgur.com/1Q1khkl.png" alt="Croatia">
+      <div class="flag-label">Croatia</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/DcIFSAr.png" alt="Cyprus">
+      <div class="flag-label">Cyprus</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/3GjcfHC.png" alt="Czech Republic">
+      <div class="flag-label">Czech Republic</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/ZZ7tErz.png" alt="Denmark">
+      <div class="flag-label">Denmark</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/SA9biN9.png" alt="Estonia">
+      <div class="flag-label"><a href="chinaexp.html">China </a></div> 
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/YcHyMS1.png" alt="Finland">
+      <div class="flag-label">Japan</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/FtcZWnQ.png" alt="France">
+      <div class="flag-label"><a href="francexp.html">France </a></div> 
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/Ey0uX1C.png" alt="Germany">
+      <div class="flag-label">Germany</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/WY5xzpr.png" alt="Greece">
+      <div class="flag-label">Greece</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/fi1cTdy.png" alt="Hungary">
+      <div class="flag-label">Hungary</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/58o89d2.png" alt="Ireland">
+      <div class="flag-label">Ireland</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/SjygCm8.png" alt="Italy">
+      <div class="flag-label">Italy</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/xEi4sdb.png" alt="Latvia">
+      <div class="flag-label">Latvia</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/56bFyae.png" alt="Lithuania">
+      <div class="flag-label">Lithuania</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/QflVFMe.png" alt="Luxembourg">
+      <div class="flag-label">Luxembourg</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/Rmkh75I.png" alt="Malta">
+      <div class="flag-label">India</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/d9cnlv0.png" alt="Netherlands">
+      <div class="flag-label">Netherlands</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/ypBgtrV.png" alt="Poland">
+      <div class="flag-label">Poland</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/VmWzmW7.png" alt="Portugal">
+      <div class="flag-label">Portugal</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/S3X1gtr.png" alt="Romania">
+      <div class="flag-label">Romania</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/uFlvQ3s.png" alt="Slovakia">
+      <div class="flag-label">Slovakia</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/zqvGhHK.png" alt="Slovenia">
+      <div class="flag-label">Slovenia</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/Sj5Tons.png" alt="Spain">
+      <div class="flag-label">Spain</div>
+    </div>
+    <div class="flag">
+      <img src="https://imgur.com/VP8SF7B.png" alt="Sweden">
+      <div class="flag-label">Sweden</div>
+    </div>
+  </div>
+
+  <!-- Add more content or sections as needed -->
+  
+  <script>
+// Fetch data from an API and display it on the webpage
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => {
+    // Process the received data
+    // Display it on the webpage
+    const element = document.getElementById('data-container');
+    element.innerHTML = JSON.stringify(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+// Perform form validation before submitting
+const form = document.getElementById('my-form');
+form.addEventListener('submit', event => {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Perform form validation
+  const input = document.getElementById('input-field');
+  const value = input.value.trim();
+
+  if (value === '') {
+    // Show an error message
+    const errorElement = document.getElementById('error-message');
+    errorElement.textContent = 'Please enter a value.';
+  } else {
+    // Submit the form
+    form.submit();
+  }
+});
+
+// Toggle a CSS class on button click
+const button = document.getElementById('toggle-button');
+const content = document.getElementById('content');
+
+button.addEventListener('click', () => {
+  content.classList.toggle('hidden');
+});
+
+    document.getElementById("usa-flag").addEventListener("click", function() {
+        this.classList.add("zoom-in");
+        setTimeout(function() {
+            window.location.href = "ENTER_YOUR_LINK_HERE";
+        }, 500); // Delay the page transition for 0.5 seconds (adjust as needed)
+    });
+
+
+
+  // Toggle function to show/hide the navigation bar
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            var navItems = document.querySelectorAll('.navbar li');
+
+            navbar.classList.toggle('hidden');
+
+            // Toggle visibility of specific navigation items
+            navItems.forEach(function(item) {
+                var itemText = item.querySelector('a').innerText;
+                if (itemText === 'Home' || itemText === 'Data' || itemText === 'Models' || itemText === 'News' || itemText === 'Vegetables') {
+                    item.classList.toggle('hidden-item');
+                }
+            });
+        }
+
+    // Add event listeners for the flags to toggle animation
+    const flags = document.querySelectorAll('.flag');
+
+    function toggleAnimation() {
+      this.classList.toggle('animated');
+    }
+
+    flags.forEach((flag) => {
+      flag.addEventListener('click', toggleAnimation);
+    });
+  </script>
+</body>
+  <div class="navbar">
+        <ul>
+            <li><a href="Homevoltility 7.html">Home</a></li>
+            <li><a href="replication 6.html">Data</a></li>
+            <li><a href="titled.html">Models</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <!-- Add more navigation items as needed -->
+        </ul>
+
+    </div>
+
+
+    <div class="content">
+        <!-- Your content goes here -->
+         <style>
+    .welcome-heading {
+        font-family: "Courier New", Courier, monospace;
+    }
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(238, 238, 238);
+        background-image: url("https://imur.com/uuuUMrS.jpgg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Rest of your CSS code */
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(238, 238, 238);
+        background-image: url("https://imur.com/uuuUMrS.jpgg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Rest of your CSS code */
+
+</style>
+
+</style>
+
+        </div>
+<div class="sign-up-button">
+<a class="btn-mktg btn-large-mktg btn-muted-mktg" data-analytics-event='{"category":"Start a free enterprise trial","action":"click to Start a free enterprise trial","label":"ref_cta:Start a free enterprise trial;"}' href="/organizations/enterprise_plan?ref_cta=Start+a+free+enterprise+trial&amp;ref_loc=Home+campaign+footer&amp;ref_page=%2F">
+    <span style="text-decoration: none; display: inline-block;">Create Account</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align: middle;">
+        <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+        <path class="octicon-chevrow-stem" stroke="transparent" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+    </svg>
+</a>
+
+
+            <button>Login</button>
+    </div>
+  
+    <div class="search-bar">
+
+        <input type="text" placeholder="Search">
+        <span></span>
+    </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>About</h3>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <p>Documentation</p>
+        <p>Tutorials</p>
+        <p>Blog</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Support</h3>
+        <p>FAQ</p>
+        <p>Community Forum</p>
+        <p>Help Center</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  
+    <!-- Add toggle button -->
+    <a href="javascript:void(0)" class="toggle-button" onclick="toggleNavbar()">
+        <svg class="layout-header__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4 5.9H3.6v-1h16.8v1zm0 6.6H3.6v-1h16.8v1zm0 6.6H3.6v-1h16.8v1z"></path>
+        </svg>
+    </a>
+</body>
+</html>
+"

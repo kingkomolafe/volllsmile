@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zara Website Navigation</title>
+    <style>
+  a:link, a:visited {
+    color: black;
+  }
+
+footer {
+  background-color: rgb(237, 237, 237);
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-section {
+  color: #555;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://imur.com/uuuUMrS.jpgg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            height: 100vh;
+            width: 200px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: width 0.3s;
+        }
+
+        .navbar.hidden {
+            width: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin-bottom: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #999;
+        }
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-heading {
+            .welcome-heading {
+            font-family: "Courier New", Courier, monospace;
+        }
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-heading img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container img.hidden {
+            opacity: 0;
+        }
+
+        .image-container img.visible {
+            opacity: 1;
+        }
+
+        .image-container figcaption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            padding: 5px;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 5px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .search-bar span {
+            margin-left: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .toggle-button {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .hidden-item {
+            display: none;
+        }.btn-mktg {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            display: inline-block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid rgba(27, 31, 35, 0.2);
+            border-radius: 6px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 10px 16px;
+            background-repeat: no-repeat;
+            background-position: right -1px center;
+            background-size: 12px 12px;
+            transition: background 0.2s cubic-bezier(0.3, 0, 0.5, 1), border 0.2s cubic-bezier(0.3, 0, 0.5, 1),
+                color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+        }
+
+        .btn-mktg.btn-large-mktg {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 12px 20px;
+        }
+
+        .btn-mktg.btn-muted-mktg {
+            color: #586069;
+            background-color: #f6f8fa;
+            background-image: linear-gradient(-180deg, #f6f8fa 0%, #f1f3f4 90%);
+            background-repeat: repeat-x;
+            background-position: -1px -1px;
+            background-size: 110% 110%;
+            border-color: rgba(27, 31, 35, 0.2);
+            box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+                inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+        }
+
+        .btn-mktg.btn-muted-mktg:hover {
+            background-color: #f1f3f4;
+            background-position: -0.5em;
+            border-color: rgba(27, 31, 35, 0.35);
+            box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+                inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+            color: #333;
+        }
+
+        .octicon {
+            display: inline-block;
+            fill: currentColor;
+            vertical-align: text-bottom;
+        }
+
+        .arrow-symbol-mktg {
+            display: inline-block;
+            color: #586069;
+            font-size: 14px;
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+        }
+
+        .octicon-chevrow-stem {
+            stroke: currentColor;
+        }
+
+        .scrollable-content {
+            height: 400px; /* Adjust the height as needed */
+            background-color: rgb(238, 238, 236);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            overflow-y: scroll;
+        }
+ .sign-up-button {
+            margin-top: 30px;
+        }
+
+        .sign-up-button button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .sign-up-button button:hover {
+            background-color: #999;
+        }
+
+      </style>
+
+    <script>
+        // Toggle function to show/hide the navigation bar
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            var navItems = document.querySelectorAll('.navbar li');
+
+            navbar.classList.toggle('hidden');
+
+            // Toggle visibility of specific navigation items
+            navItems.forEach(function(item) {
+                var itemText = item.querySelector('a').innerText;
+                if (itemText === 'Home' || itemText === 'Data' || itemText === 'Models' || itemText === 'News' || itemText === 'Vegetables') {
+                    item.classList.toggle('hidden-item');
+                }
+            });
+        }
+
+        // Function to switch images
+         function switchImage() {
+            var image = document.getElementById("main-image");
+            var figcaption = document.getElementById("image-caption");
+
+            // Add hidden class to fade out the image
+            image.classList.add("hidden");
+
+            setTimeout(function() {
+                // Check the current image source
+                if (image.src === "https://imgur.com/YaT5HiP.jpg") {
+                    // Switch to the second image
+                    image.src = "https://imgur.com/wojUb1Q.jpg";
+                    figcaption.innerHTML = "Electrical and Electronic Equipment:";
+                } else if (image.src === "https://imgur.com/wojUb1Q.jpg") {
+                    // Switch to the third image
+                    image.src = "https://imgur.com/1vbLq7k.jpg";
+                    figcaption.innerHTML = " Optical and Medical Instruments ";
+                } else {
+                    // Switch to the first image
+                    image.src = "https://imgur.com/YaT5HiP.jpg";
+                    figcaption.innerHTML = "Minerals ";
+                }
+
+                image.onload = function() {
+                    // Remove hidden class to fade in the image
+                    image.classList.remove("hidden");
+                    image.classList.add("visible");
+
+                    setTimeout(function() {
+                        // Remove visible class to reset opacity for the next transition
+                        image.classList.remove("visible");
+                    }, 1000);
+                };
+            }, 500);
+        }
+
+        // Delayed image switch
+        setInterval(switchImage, 10000); // Repeat every 10 seconds
+    </script>
+</head>
+<body>
+    <div class="navbar">
+         <ul>
+            <li><a href="Homevoltility 7.html">Home</a></li>
+            <li><a href="replication 6.html">Data</a></li>
+            <li><a href="titled.html">Models</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <!-- Add more navigation items as needed -->
+        </ul>
+
+
+
+    </div>
+
+
+    <div class="content">
+        <!-- Your content goes here -->
+         <style>
+    .welcome-heading {
+        font-family: "Courier New", Courier, monospace;
+    }
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(238, 238, 238);
+        background-image: url("https://imur.com/uuuUMrS.jpgg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Rest of your CSS code */
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(238, 238, 238);
+        background-image: url("https://imur.com/uuuUMrS.jpgg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Rest of your CSS code */
+
+</style>
+
+</style>
+
+
+
+<h1 class="welcome-heading">
+    <img src="https://imgur.com/GW91Wus.jpg" alt="Logo">
+    The Volatility Smile
+
+</h1>
+        <p>Factors that impact a country's Gross Domestic Product</p>
+        <div class="image-container">
+            <figure>
+                <img id="main-image" src="https://imgur.com/YaT5HiP.jpg" alt="First Image">
+                <figcaption id="image-caption">Minerals </figcaption>
+            </figure>
+        </div>
+      
+        <div class="scrollable-content">
+            <!-- Your scrollable content goes here -->
+            <h2>Largest imports</h2>
+            <p></p>
+            <p>
+
+1. Electrical and Electronic Equipment: China imports a significant amount of electrical and electronic products, including semiconductors, integrated circuits, computer equipment, telecommunications equipment, and consumer electronics.
+
+2. Mineral Fuels and Oils: China is a major importer of mineral fuels and oils, including crude oil, petroleum products, and natural gas.
+
+3. Machinery and Equipment: China imports various types of machinery and equipment, such as industrial machinery, power generation equipment, machinery parts, and heavy machinery.
+
+4. Iron and Steel: China imports iron and steel products for use in construction, manufacturing, and infrastructure projects.
+
+5. Plastics and Rubber Products: China imports a considerable amount of plastic products and rubber products for various industries.
+
+6. Vehicles and Automotive Parts: China imports automobiles, trucks, and automotive parts from various countries.
+
+7. Optical and Medical Instruments: China imports optical instruments, medical instruments, and precision equipment.
+
+8. Agricultural Products: China imports a range of agricultural products, including soybeans, edible oils, meat, dairy products, and fruits.
+
+Please note that the composition of China's imports can change over time due to factors such as shifts in domestic demand, economic policies, and global trade dynamics. For the most up-to-date and detailed information on China's imports, it is recommended to consult official trade data sources, such as the General Administration of Customs of the People's Republic of China or international trade databases.</p>
+<h3> <li><a href="replication 6.html"></a></li>
+</h3>
+            <p>
+</p>
+        </div>
+<div class="sign-up-button">
+<a class="btn-mktg btn-large-mktg btn-muted-mktg" data-analytics-event='{"category":"Start a free enterprise trial","action":"click to Start a free enterprise trial","label":"ref_cta:Start a free enterprise trial;"}' href="/organizations/enterprise_plan?ref_cta=Start+a+free+enterprise+trial&amp;ref_loc=Home+campaign+footer&amp;ref_page=%2F">
+    <span style="text-decoration: none; display: inline-block;">Create Account</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align: middle;">
+        <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+        <path class="octicon-chevrow-stem" stroke="transparent" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+    </svg>
+</a>
+
+
+            <button>Login</button>
+    </div>
+  
+    <div class="search-bar">
+
+        <input type="text" placeholder="Search">
+        <span></span>
+    </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>About</h3>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <p>Documentation</p>
+        <p>Tutorials</p>
+        <p>Blog</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Support</h3>
+        <p>FAQ</p>
+        <p>Community Forum</p>
+        <p>Help Center</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  
+    <!-- Add toggle button -->
+    <a href="javascript:void(0)" class="toggle-button" onclick="toggleNavbar()">
+        <svg class="layout-header__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4 5.9H3.6v-1h16.8v1zm0 6.6H3.6v-1h16.8v1zm0 6.6H3.6v-1h16.8v1z"></path>
+        </svg>
+    </a>
+</body>
+</html>
